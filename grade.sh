@@ -27,6 +27,7 @@ then
     exit
 fi
 
+java -cp $CPATH org.junit.runner.JUnitCore TestListExamples
 java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > tests.txt
 if grep -q -e "OK" tests.txt 
 then   

@@ -10,7 +10,7 @@ if [[ -e ListExamples.java ]]
 then
     echo 'ListExamples.java found'
 else
-    echo 'Error ListExamples.java not found'
+    echo 'Error ListExamples.java not found 0%'
     exit
 fi
 
@@ -24,6 +24,7 @@ javac -cp $CPATH *.java 2> output.txt
 if [[ $? > 0 ]] 
 then
     cat output.txt
+    echo "0%"
     exit
 fi
 
